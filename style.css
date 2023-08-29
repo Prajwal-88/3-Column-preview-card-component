@@ -1,0 +1,107 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+img{
+    margin-bottom: 2rem;
+}
+
+button{
+    font-family: inherit;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    border: 2px solid aliceblue;
+    transition: all .3s ease;
+}
+h2,button{
+    color: hsl(0, 0%, 95%);
+}
+h2{
+    margin-bottom: 1.8rem;
+    font-size: 2.5rem;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    place-items:center;
+    padding: 5rem 0;
+}
+main{
+    width: 22rem;
+    overflow: hidden;
+    border-radius: .7rem;
+}
+
+article{
+    padding: 3rem 3rem;
+}
+
+main article:nth-child(1){
+    background-color:  hsl(31, 77%, 52%);
+}
+main article:nth-child(2){
+    background-color: hsl(184, 100%, 22%);
+}
+main article:nth-child(3){
+    background-color:hsl(179, 100%, 13%) ;
+}
+main article:nth-child(1) button{
+   color:  hsl(31, 77%, 52%);
+}
+main article:nth-child(2) button{
+    color: hsl(184, 100%, 22%);
+}
+main article:nth-child(3) button{
+    color:hsl(179, 100%, 13%);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.attribution { font-size: 11px;
+            text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Hover Section */
+main article:nth-child(1) button:hover{
+    background-color:  hsl(31, 77%, 52%);
+}
+main article:nth-child(2) button:hover{
+    background-color:hsl(184, 100%, 22%); 
+}
+main article:nth-child(3) button:hover{
+ background-color:hsl(179, 100%, 13%) ;   
+}
+main article button:hover{
+    color: aliceblue;
+    border: 2px solid aliceblue;
+}
+
+/* break-points */
+@media only screen and (min-width:1000px) {
+    main{
+        width: 65vw;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(auto,20rem));
+    }
+}
